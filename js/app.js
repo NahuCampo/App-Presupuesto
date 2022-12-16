@@ -30,9 +30,20 @@ let totalEgresos = () =>{
 
 let cargarCabecero= () =>{
     let presupuesto = totalIngresos() - totalEgresos();
-    let porcentajeEgreso = totalEgresos() / totalIngresos();
-    document.getElementById('presupuesto').innerHTML = presupuesto;
-    document.getElementById('ingresos').innerHTML = totalIngresos();
-    document.getElementById('egresos').innerHTML = totalEgresos();
-    document.getElementById('porcentaje').innerHTML = porcentajeEgreso;
+    let porcentajeEgreso = totalEgresos() / (totalEgresos()+totalIngresos());
+    let porcentajeIngreso = totalIngresos() / (totalEgresos()+totalIngresos());
+    document.getElementById('presupuesto').innerHTML = formatoMoneda(presupuesto);
+    document.getElementById('ingresos').innerHTML = formatoMoneda(totalIngresos());
+    document.getElementById('egresos').innerHTML = formatoMoneda(totalEgresos());
+    document.getElementById('porcentajeEgreso').innerHTML = formatoPorcentaje(porcentajeEgreso);
+    document.getElementById('porcentajeIngreso').innerHTML = formatoPorcentaje(porcentajeIngreso);
+}
+
+const formatoMoneda = (valor) =>{
+    return valor.toLocaleString('es-AR',{style: 'currency', currency:'ARS', minimumFractionDigits: 2});
+}
+
+const formatoPorcentaje = (valor) =>{
+    return valor.toLocaleString('es-AR',{style: 'percent', minimumFractionDigits: 2});
+
 }
