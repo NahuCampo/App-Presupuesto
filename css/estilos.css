@@ -215,7 +215,6 @@ h2 {
     margin-left: 20px;
     transition: transform 0.3s;
     font-size: 11px;
-    background-color: #FFDAD9;
     padding: 3px;
     border-radius: 3px;
     width: 45px;
@@ -223,14 +222,22 @@ h2 {
 }
 
 .ingreso .elemento_valor,
+.ingreso .elemento_porcentaje,
 .ingreso .elemento_eliminar--btn {
     color: #28B9B5;
+}
+
+.ingreso .elemento_porcentaje{
+    background-color: #b6fefc;
 }
 
 .egreso .elemento_valor,
 .egreso .elemento_porcentaje,
 .egreso .elemento_eliminar--btn {
     color: #FF5049;
+}
+.egreso .elemento_porcentaje{
+    background-color: #FFDAD9;
 }
 
 
