@@ -1,0 +1,303 @@
+@import url("https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css");
+
+body {
+  background-color: #222;
+}
+
+:root {
+  --gid1: #b9a973;
+  --gid2: #d4af37;
+  --gid3: #735e18;
+  --gid4: #433919;
+
+  --dark1: #111;
+  --dark2: #181818;
+
+  --light1: #b9b9b9;
+  --light2: #777;
+}
+
+@font-face {
+  font-family: "Migha";
+  src: url(https://dl.dropbox.com/s/nxodwtjbxbey5xh/Migha-Black.otf?dl=0);
+}
+
+.gid-trnk {
+  width: 620px;
+  height: 420px;
+  background-color: var(--dark2);
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 20px solid #000;
+  outline: 1px dotted var(--gid2);
+  outline-offset: -10px;
+}
+
+.gid-title {
+  width: 100%;
+  height: auto;
+  font-family: migha;
+  font-size: 50px;
+  color: var(--gid3);
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-shadow: 1px 0px 0px var(--gid4);
+}
+
+.gid-title i {
+  -webkit-text-stroke: 1px var(--gid1);
+  color: transparent;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 0px;
+}
+
+.gid-st {
+  width: 550px;
+  font-family: oswald;
+  font-size: 7px;
+  letter-spacing: 8.7px;
+  color: var(--gid1);
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+  font-weight: 100;
+}
+
+.gid-image {
+  width: 550px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  opacity: 1;
+  position: relative;
+}
+
+.gid-banner {
+  width: 550px;
+  height: 100px;
+  background-color: var(--gid4);
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+  position: absolute;
+  top: 0px;
+}
+
+.gid-image:hover .gid-banner {
+  transition: ease-in-out 0.5s;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0px;
+}
+
+.gid-icons {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  bottom: -35px;
+  font-size: 25px;
+  color: var(--gid1);
+  letter-spacing: 25px;
+  text-align: center;
+}
+
+.gid-icons i {
+  color: var(--gid1);
+}
+
+.gid-icons a {
+  color: var(--gid1);
+}
+
+.gid-bottom {
+  width: 550px;
+  height: 190px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.gid-left {
+  width: 40%;
+  height: auto;
+  margin: 0px;
+}
+
+.gid-right {
+  width: 60%;
+  height: auto;
+}
+
+.gid-playlist {
+  width: 80%;
+  height: 140px;
+  padding: 10px;
+  font-family: oswald;
+  text-transform: uppercase;
+  font-size: 8px;
+  color: var(--gid1);
+  letter-spacing: 2px;
+}
+
+.gid-playlist span {
+  font-size: 7px;
+  color: var(--gid3);
+  letter-spacing: 4px;
+}
+
+.gid-music {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  color: var(--gid2);
+  margin-bottom: 5px;
+}
+
+.gid-colors {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.gid-pantone {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: 1.5px solid var(--gid2);
+  outline-offset: 4px;
+}
+
+.gid-info {
+  width: 87%;
+  height: 70px;
+  background-color: var(--dark1);
+  margin: 10px;
+  padding: 15px;
+  color: var(--light1);
+  font-family: oswald;
+  font-size: 9px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--gid2);
+  overflow-y: scroll;
+  text-align: justify;
+}
+
+.gid-info b {
+  font-family: migha;
+  font-size: 9px;
+  color: var(--gid3);
+  letter-spacing: 1px;
+}
+
+.gid-info::-webkit-scrollbar {
+  background-color: rgb(0, 0, 0, 0);
+  width: 5px;
+  height: 2px;
+}
+
+.gid-info::-webkit-scrollbar-thumb {
+  border: solid 1px var(--gid2);
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.gid-crono {
+  width: 95%;
+  height: 240px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+.gid-cronobox {
+  width: 75%;
+  height: 64%;
+  background-color: var(--dark1);
+  margin-left: 15px;
+  margin-right: 5px;
+  border-bottom: 2px solid var(--gid2);
+  overflow-y: scroll;
+  font-family: oswald;
+  font-size: 12px;
+  color: var(--light1);
+  font-weight: 100;
+  padding: 20px;
+  line-height: 1em;
+}
+
+.gid-cronobox i {
+  font-size: 10px;
+  margin-right: 10px;
+  color: var(--gid2);
+  text-align: center;
+}
+
+.gid-cronobox span {
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: var(--gid3);
+  line-height: 1em;
+}
+
+.gid-cronobox a {
+  color: var(--light1);
+}
+.gid-cronobox::-webkit-scrollbar {
+  background-color: rgb(0, 0, 0, 0);
+  width: 5px;
+  height: 2px;
+}
+
+.gid-cronobox::-webkit-scrollbar-thumb {
+  border: solid 1px var(--gid2);
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.gid-cronotitle {
+  width: 100%;
+  height: 12%;
+  -webkit-text-stroke: 0.5px var(--gid1);
+  color: transparent;
+  letter-spacing: 5px;
+  font-family: migha;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.gid-titlebox {
+  width: 92%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 28px;
+  text-align: center;
+  font-family: oswald;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gid1);
+}
+
+.gid-titlebox i {
+  color: var(--gid2);
+  font-size: 15px;
+}
